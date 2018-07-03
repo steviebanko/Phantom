@@ -141,8 +141,38 @@
     </div>
   </div>
 </div>
-
 </section>
+
+<!-- VIDEO -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/Gb1Oxj8qRkY" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -162,7 +192,7 @@
     });
 
     // Video Play
-    $(function () {
+    $(function () { 
       // Auto play modal video
       $(".video").click(function () {
         var theModal = $(this).data("target"),
