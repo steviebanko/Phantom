@@ -240,7 +240,11 @@
       interval:6000,
       pause: 'hover'
     });
-
+    //LIGHTBOX
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
     // Video Play
     $(function () { 
       // Auto play modal video
